@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ductil - Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo">DUCTIL</div>
+            <div class="logo-subtitle">Desenvolvimento humano</div>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>O poder da <span>Flexibilidade</span></h1>
+            <p>Conectando soluções em Programação, Psicologia e Marketing para impulsionar sua visão.</p>
+            <a href="#servicos" class="btn">Conheça Nossos Serviços</a>
+        </div>
+        <div class="spheres">
+            <div class="sphere sphere-1"></div>
+            <div class="sphere sphere-2"></div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <h2>Nossas Especialidades</h2>
+        <div class="grid-services">
+            <button type="button" class="card" data-service="programacao" aria-haspopup="dialog" aria-controls="serviceDialog">
+                <i data-lucide="code-2" class="icon"></i>
+                <h3>Programação</h3>
+                <p>Desenvolvimento Web de alta performance, automação, desenvolvimento de Chatbots e arquiteturas de software escaláveis.</p>
+            </button>
+            <button type="button" class="card" data-service="psicologia" aria-haspopup="dialog" aria-controls="serviceDialog">
+                <i data-lucide="brain" class="icon"></i>
+                <h3>Psicologia</h3>
+                <p>Abordagens clínicas, psicologia organizacional e suporte estratégico para o desenvolvimento humano e corporativo.</p>
+            </button>
+            <button type="button" class="card" data-service="marketing" aria-haspopup="dialog" aria-controls="serviceDialog">
+                <i data-lucide="bar-chart-3" class="icon"></i>
+                <h3>Marketing</h3>
+                <p>Posicionamento de marca, gestão de tráfego, SEO e estratégias data-driven para dominar seu mercado.</p>
+            </button>
+        </div>
+    </section>
+
+    <dialog id="serviceDialog" class="service-dialog" aria-labelledby="serviceDialogTitle" aria-describedby="serviceDialogDescription">
+        <button type="button" class="dialog-close" aria-label="Fechar detalhes do serviço">&times;</button>
+        <p class="dialog-eyebrow">NOSSOS SERVIÇOS</p>
+        <h2 id="serviceDialogTitle"></h2>
+        <p id="serviceDialogDescription" class="dialog-description"></p>
+        <ul id="serviceDialogDetails" class="dialog-details"></ul>
+    </dialog>
+
+    <section id="sobre" class="about">
+        <div class="about-text">
+            <h2>A Essência Ductil</h2>
+            <p>Ductilidade é a capacidade de um material se deformar sob tensão sem se romper. Nós somos a resiliência e adaptação que seu projeto precisa nos cenários mais desafiadores.</p>
+        </div>
+        <div class="css-art">
+            <div class="ring r1"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <div class="monogram">D</div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm" class="floating-form">
+            <div class="input-group">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome Completo</label>
+                <div class="line"></div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">E-mail Profissional</label>
+                <div class="line"></div>
+            </div>
+            <div class="input-group">
+                <textarea id="mensagem" rows="4" required></textarea>
+                <label for="mensagem">Como podemos ajudar?</label>
+                <div class="line"></div>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ductil Serviços. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
